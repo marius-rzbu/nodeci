@@ -7,7 +7,11 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-    res.send('hello world: ' + process.env.NODE_ENV);
+    res.send('hello world');
+});
+
+app.get('/env', function (req, res) {
+    res.send('env: ' + process.env.NODE_ENV);
 });
 
 app.listen(process.env.PORT || 5000);
