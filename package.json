@@ -9,5 +9,10 @@
   "devDependencies": {
     "mocha": "latest",
     "supertest": "latest"
+  },
+
+  "scripts": {
+    "start": "node app.js",
+    "test": "./script/test"
   }
 }
