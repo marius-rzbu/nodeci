@@ -14,6 +14,10 @@ app.get('/env', function (req, res) {
     res.send('env: ' + process.env.NODE_ENV);
 });
 
+app.get('/other', function (req, res) {
+    res.send(process);
+});
+
 app.listen(process.env.PORT || 5000);
 
 module.exports = app;
