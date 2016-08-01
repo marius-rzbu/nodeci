@@ -15,7 +15,7 @@ app.get('/env', function (req, res) {
 });
 
 app.get('/other', function (req, res) {
-    res.send(process);
+    res.send(JSON.stringify(process));
 });
 
 app.listen(process.env.PORT || 5000);
