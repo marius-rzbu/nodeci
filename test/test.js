@@ -2,6 +2,8 @@
  * Created by mariuspatru on 8/1/16.
  */
 
+process.env.PORT = 7777;
+
 var request = require('supertest');
 var app = require('../app.js');
 
