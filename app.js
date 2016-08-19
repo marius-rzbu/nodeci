@@ -8,7 +8,7 @@ var app = express();
 
 // send a simple message
 app.get('/', function (req, res) {
-    res.send('hello world');
+    res.send('hello world, this is production');
 });
 
 app.get('/env', function (req, res) {
