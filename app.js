@@ -6,6 +6,7 @@ var express = require('express');
 
 var app = express();
 
+// send a simple message
 app.get('/', function (req, res) {
     res.send('hello world');
 });
